@@ -12,8 +12,8 @@ import scipy.sparse.linalg as scislin
 
 from numpy.testing import assert_raises
  
-from rsvd import rsvd
-from hfun import *
+from .rsvd import rsvd
+from .hfun import *
     
 
 def cdmd(A, dt = 1, k=None, p=10, sdist='sparse', sf=0.9,
@@ -150,7 +150,7 @@ def cdmd(A, dt = 1, k=None, p=10, sdist='sparse', sf=0.9,
             S = sci.sparse.rand(k+p, m, density=density, format='coo', random_state=None)
             #if isreal==False: 
             #    S.data += 1j * np.random.uniform(0 , 1 , size=( len(S.data) ) )  
-            if trace==True: print "Sparse: %f" %sf + " zeros "
+            if trace==True: print ("Sparse: %f" %sf + " zeros ")
             S.data *=2          
             S.data -=1            
             S = S.tocsr()

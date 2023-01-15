@@ -2,7 +2,7 @@
 try:
     import setuptools
 except ImportError:
-    print "The package 'setuptools' is required!"
+    print ("The package 'setuptools' is required!")
 
 NAME ='DMDpack'
 VERSION ='1.0.0'
@@ -18,7 +18,7 @@ LICENSE ='BSD'
 try:
     from setuptools import setup, find_packages
 except ImportError:
-    print "The package 'setuptools' is required!"
+    print ("The package 'setuptools' is required!")
 
 # To use a consistent encoding
 from codecs import open

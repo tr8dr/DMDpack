@@ -49,7 +49,4 @@ def plot_modes( omega, color='r', color2='blue', name=None, maker='o', alpha = 0
     
 
 
-     
-if __name__ == "__main__":
-	print "Imported."
 

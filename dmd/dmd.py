@@ -11,7 +11,7 @@ from scipy import linalg
 import scipy.sparse.linalg as scislin
 
  
-from rsvd import rsvd
+from .rsvd import rsvd
 
 #matrix transpose for real matricies
 def rT(A): 

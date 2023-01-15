@@ -10,7 +10,7 @@ import scipy as sci
 import scipy.sparse.linalg as scislin
 from numpy.testing import assert_raises
  
-from hfun import *
+from .hfun import *
    
 
 def rsvd(A, k=None, p=0, q=0, method='standard', sdist='uniform'):
@@ -234,5 +234,3 @@ def rsvd(A, k=None, p=0, q=0, method='standard', sdist='uniform'):
     #**************************************************************************       
 
      
-if __name__ == "__main__":
-	print "Imported."

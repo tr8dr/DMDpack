@@ -12,8 +12,8 @@ import scipy.sparse.linalg as scislin
 
 from numpy.testing import assert_raises
  
-from rsvd import rsvd
-from hfun import *
+from .rsvd import rsvd
+from .hfun import *
     
 
 def tdmd(A, dt = 1, k=None, p=5, q=2, modes='exact',
